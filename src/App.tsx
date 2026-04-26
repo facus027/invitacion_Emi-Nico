@@ -24,7 +24,7 @@ function App() {
           <RevealOnScroll>
         <div className="flex">
           <img 
-             src="https://res.cloudinary.com/dwxwejuvu/image/upload/c_fill,g_auto,w_800,h_800/xwvd2x232xmh6xg2mbwz.png" 
+             src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1777214788/xwvd2x232xmh6xg2mbwz.png" 
              alt="Emilia&Nicolas"
              className="w-11/12 h-auto mx-auto object-contain" 
              />
