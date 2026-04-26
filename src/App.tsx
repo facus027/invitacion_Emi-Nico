@@ -15,7 +15,6 @@ function App() {
     <>
       <section className="mx-auto w-full max-w-md pt-10 text-center bg-background">
 
-          <div className="relative md:ml-32 ml-r1 mx-auto font-montserratMedium font-bold w-full max-w-[420px]">
           
 
           <RevealOnScroll>
