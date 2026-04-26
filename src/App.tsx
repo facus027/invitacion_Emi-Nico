@@ -24,7 +24,7 @@ function App() {
           <RevealOnScroll>
         <div className="flex">
           <img 
-             src="/nombres-04.png" 
+             src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1777214788/xwvd2x232xmh6xg2mbwz.png" 
              alt="Emilia&Nicolas"
              className="w-11/12 h-auto mx-auto object-contain" 
              />
@@ -66,7 +66,7 @@ function App() {
           <div>
       <img
         src="/gifts/fecha.gif"
-        alt="fecha_gift"
+        alt="https://res.cloudinary.com/dwxwejuvu/image/upload/v1777214788/tvf7zrcflpum0jyynodh.png"
         className="mx-auto h-auto w-20 object-contain"
       />
            <h2 className="md:text-xl text-base text-title font-montserratMedium tracking-wider uppercase">Agenda la fecha</h2>
