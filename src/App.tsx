@@ -74,7 +74,7 @@ function App() {
           <img 
              src="/fecha.png" 
              alt="Emilia&Nicolas"
-             className="w-full h-auto mx-auto object-contain mt-2" 
+             className="w-full max-w-[380px] h-auto object-contain" 
           />
           
           <AddToCalendar />
