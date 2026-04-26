@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <section className="mx-auto w-full max-w-md pt-10 text-center bg-background">
+      <section className="mx-auto min-h-dvh w-full max-w-md overflow-hidden bg-background pt-4 text-center">
 
           <div className="relative md:ml-32 ml-r1 mx-auto font-montserratMedium font-bold w-full max-w-[420px]">
            <div className="absolute right-3 md:top-3 -top-7 z-10 opacity-80 hover:opacity-100 ">
@@ -26,7 +26,7 @@ function App() {
           <img 
              src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1777214788/xwvd2x232xmh6xg2mbwz.png" 
              alt="Emilia&Nicolas"
-             className="w-11/12 h-auto mx-auto object-contain" 
+             className="w-full max-w-[380px] h-auto object-contain" 
              />
         </div>
 
