@@ -2,7 +2,7 @@ import { useState } from "react"
 import { AddToCalendar } from "./components/AddToCalendar"
 import { Countdown } from './components/Countdown'
 import { ImageFadeGrid } from './components/ImageFadeGrid'
-import { LunaDeMielCard } from './components/LunaDeMielCard'
+//import { LunaDeMielCard } from './components/LunaDeMielCard'
 //import { MusicPlayer } from './components/MusicPlayer'
 import { RsvpModal } from "./features/rsvp/components/RsvpModal"
 import { RevealOnScroll } from "./components/RevealOnScroll"
@@ -13,14 +13,14 @@ function App() {
 
   return (
     <>
-      <section className="mx-auto w-full max-w-md pt-10 text-center bg-background">
+      <section className="mx-auto w-full md:max-w-md text-center bg-background">
 
           
 
           <RevealOnScroll>
         <div className="flex">
           <img 
-             src="https://res.cloudinary.com/dwxwejuvu/image/upload/v1777214788/xwvd2x232xmh6xg2mbwz.png" 
+             src="/nombres-04.png" 
              alt="Emilia&Nicolas"
              className="w-11/12 h-auto mx-auto object-contain" 
              />
@@ -98,7 +98,7 @@ function App() {
               </h2>
 
               <p className="md:text-lg text-xs font-montserrat text-texto tracking-wide uppercase mt-5 mb-5">
-                18:45 horas <br/>
+                18:00 horas <br/>
                 Parroquia Ntra Sra del Carmen.
               </p>
 
@@ -124,11 +124,11 @@ function App() {
               />
 
               <h2 className="md:text-xl text-base text-title font-montserratMedium tracking-wider uppercase mt-2">
-                recepción
+                Civil y Fiesta
               </h2>
 
               <p className="md:text-lg text-xs font-montserra text-texto tracking-wide uppercase mt-5 mb-5">
-                20:00 horas <br/>
+                19:00hs a 5:00hs <br/>
                 ALMANDINO - Casa de Eventos.
               </p>
 
@@ -151,9 +151,6 @@ function App() {
 
         <div className="">
 
-          <RevealOnScroll>
-          <LunaDeMielCard/>
-          </RevealOnScroll>
 
           <RevealOnScroll>
               <div className="">
@@ -184,16 +181,22 @@ function App() {
               className="mx-auto h-auto w-20 object-contain"
               />
 
-              <h2 className="md:text-xl text-base text-title font-montserratMedium tracking-wider uppercase mt-2 mb-5">
-                CONFIRMÁ TU ASISTENCIA
+              <h2 className="md:text-base text-sm text-title font-montserratMedium tracking-wider uppercase mt-2 mb-5">
+                TU PRESENCIA ES NUESTRO MEJOR REGALO
               </h2>
+
+              <p className="md:text-base text-xs font-montserra text-texto tracking-wide uppercase mt-5 mb-10">
+                Si querés acompañarnos en este momento tan importante,
+                solo necesitamos que confirmes tu asistencia.
+
+              </p>
 
              <button
                 type="button"
                 onClick={() => setIsRsvpModalOpen(true)}
                 className="px-4 py-0.5 text-sm uppercase border font-montserrat text-texto border-title rounded-full focus:ring-1"
               >
-                Completá el formulario
+                Confirmar Asistencia
               </button>
             </div>
 

@@ -58,11 +58,12 @@ export const RsvpForm = () => {
   return (
     <div className="space-y-5 text-center text-[#262e54]">
       <h2 className="font-serif text-2xl uppercase tracking-[0.25em] text-[#c9a227]">
-        ¡Gracias por confirmar!
+        ¡Gracias por acompañarnos!
       </h2>
 
       <p className="text-sm leading-relaxed text-[#262e54]/70">
-        Tu asistencia fue registrada correctamente.
+        Tu presencia es lo más importante para nosotros
+        y estamos muy felices de que formes parte de este momento.
       </p>
 
       <div className="rounded-2xl border border-[#d4af37]/40 bg-[#f8f4ed] p-5 text-left shadow-sm">
@@ -87,7 +88,7 @@ export const RsvpForm = () => {
 
         <div className="mt-4 border-t border-[#d4af37]/30 pt-4 text-center">
           <p className="text-xs uppercase tracking-widest text-[#262e54]/50">
-            Total a abonar
+            Tu asistencia fue registrada correctamente.
           </p>
 
           <p className="mt-1 text-2xl font-semibold text-[#262e54]">

@@ -26,7 +26,7 @@ export const RsvpModal = ({ isOpen, onClose }: RsvpModalProps) => {
           </h2>
 
           <p className="mt-3 text-sm leading-relaxed text-texto">
-            Completá tus datos y reserva tu tarjeta antes del 10 de noviembre de 2026.
+            Completá tus datos para acompañarnos en este día tan especial antes del 31 de octubre de 2026.
           </p>
         </div>
 
