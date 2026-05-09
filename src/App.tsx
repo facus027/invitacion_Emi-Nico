@@ -3,7 +3,7 @@ import { AddToCalendar } from "./components/AddToCalendar"
 import { Countdown } from './components/Countdown'
 import { ImageFadeGrid } from './components/ImageFadeGrid'
 //import { LunaDeMielCard } from './components/LunaDeMielCard'
-//import { MusicPlayer } from './components/MusicPlayer'
+import { MusicPlayer } from './components/MusicPlayer'
 import { RsvpModal } from "./features/rsvp/components/RsvpModal"
 import { RevealOnScroll } from "./components/RevealOnScroll"
 
@@ -15,14 +15,18 @@ function App() {
     <>
       <section className="mx-auto w-full md:max-w-md text-center bg-background">
 
-          
+        <div className="relative md:ml-32 ml-r1 mx-auto font-montserratMedium font-bold w-full max-w-[420px]">
+           <div className="absolute right-3 md:top-3 -top-7 z-10 opacity-80 hover:opacity-100 ">
+             <MusicPlayer src="/audio/musica.mp3" />
+           </div>
+          </div>
 
           <RevealOnScroll>
         <div className="flex">
           <img 
              src="/nombres-04.png" 
              alt="Emilia&Nicolas"
-             className="w-11/12 h-auto mx-auto object-contain" 
+             className="w-full h-auto mx-auto object-contain" 
              />
         </div>
 
@@ -62,7 +66,7 @@ function App() {
           <div>
       <img
         src="/gifts/fecha.gif"
-        alt="https://res.cloudinary.com/dwxwejuvu/image/upload/v1777214788/tvf7zrcflpum0jyynodh.png"
+        alt="fecha_gif"
         className="mx-auto h-auto w-20 object-contain"
       />
            <h2 className="md:text-xl text-base text-title font-montserratMedium tracking-wider uppercase">Agenda la fecha</h2>
@@ -127,7 +131,7 @@ function App() {
                 Civil y Fiesta
               </h2>
 
-              <p className="md:text-lg text-xs font-montserra text-texto tracking-wide uppercase mt-5 mb-5">
+              <p className="md:text-lg text-xs font-montserrat text-texto tracking-wide uppercase mt-5 mb-5">
                 19:00hs a 5:00hs <br/>
                 ALMANDINO - Casa de Eventos.
               </p>
