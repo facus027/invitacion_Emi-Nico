@@ -21,6 +21,21 @@ export default {
         'asistencia': '#d6d0c8',
       },
 
+      animation: {
+       giftFloat: "giftFloat 3.8s ease-in-out infinite",
+    },
+    
+    keyframes: {
+       giftFloat: {
+       "0%, 100%": {
+    transform: "translateY(0px)",
+  },
+  "50%": {
+    transform: "translateY(-4px)",
+  },
+    },
+    },
+
     },
   },
   plugins: [],

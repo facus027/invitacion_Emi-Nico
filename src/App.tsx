@@ -7,8 +7,13 @@ import { MusicPlayer } from './components/MusicPlayer'
 import { RsvpModal } from "./features/rsvp/components/RsvpModal"
 import { RevealOnScroll } from "./components/RevealOnScroll"
 
+import { Gift } from "lucide-react";
+
 function App() {
   
+  const videoUrl =
+  "https://res.cloudinary.com/dwxwejuvu/video/upload/f_auto,q_auto:good,w_720/v1780922806/video_pu8l7h.mov";
+
   const [isRsvpModalOpen, setIsRsvpModalOpen] = useState(false)
 
   return (
@@ -23,16 +28,24 @@ function App() {
 
           <RevealOnScroll>
         <div className="flex">
-          <img 
-             src="/nombres-04.png" 
-             alt="Emilia&Nicolas"
-             className="w-full h-auto mx-auto object-contain" 
-             />
+         
+         <video
+           className="w-full rounded-2xl shadow-lg"
+           autoPlay
+           loop
+           playsInline
+           muted
+           preload="metadata"
+         >
+           <source src={videoUrl} />
+           Tu navegador no soporta video.
+         </video>
+
         </div>
 
         <div>
            {/* Subtítulo (si lo tienen como texto) */}
-          <p className=" text-2xl w-full uppercase tracking-wider text-title font-[var(--font-montserrat-medium)] mt-16 ">
+          <p className=" text-2xl w-full uppercase tracking-wider text-title font-[var(--font-montserrat-medium)] mt-8 ">
             ¡Nos casamos!
           </p>
            <Countdown targetDate="2026-11-22T00:00:00-03:00" />
@@ -72,7 +85,7 @@ function App() {
            <h2 className="md:text-xl text-base text-title font-montserratMedium tracking-wider uppercase">Agenda la fecha</h2>
           </div>          
           <img 
-             src="/fecha.png" 
+             src="https://res.cloudinary.com/dwxwejuvu/image/upload/f_auto,q_auto:good/b45viibdiaf01xb7ji71.png" 
              alt="Emilia&Nicolas"
              className="w-full h-auto mx-auto object-contain mt-2" 
           />
@@ -179,11 +192,13 @@ function App() {
  
           <RevealOnScroll>  
             <div className="bg-asistencia p-6 mt-7 h-auto pb-10">
-              <img 
-              src="/gifts/asistencia.gif" 
-              alt="gift_asistencia" 
-              className="mx-auto h-auto w-20 object-contain"
-              />
+             <div className="flex justify-center">
+                <Gift
+                 size={68}
+                 strokeWidth={0.5}
+                 className="text-white animate-giftFloat"
+                />
+              </div>
 
               <h2 className="md:text-base text-sm text-title font-montserratMedium tracking-wider uppercase mt-2 mb-5">
                 TU PRESENCIA ES NUESTRO MEJOR REGALO
