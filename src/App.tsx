@@ -1,13 +1,13 @@
 import { useState } from "react"
 import { AddToCalendar } from "./components/AddToCalendar"
 import { Countdown } from './components/Countdown'
-import { ImageFadeGrid } from './components/ImageFadeGrid'
 //import { LunaDeMielCard } from './components/LunaDeMielCard'
 import { MusicPlayer } from './components/MusicPlayer'
 import { RsvpModal } from "./features/rsvp/components/RsvpModal"
 import { RevealOnScroll } from "./components/RevealOnScroll"
 
 import { Gift } from "lucide-react";
+import { PanoramicImageSlider } from "./components/PanoramicImageSlider"
 
 function App() {
   
@@ -59,14 +59,14 @@ function App() {
         </div>
 
         <div>
-          <ImageFadeGrid
+          <PanoramicImageSlider
             images={[
-              "/fotos/1.jpg",
-              "/fotos/2.jpg",
-              "/fotos/3.jpg",
-              "/fotos/4.jpg",
-              "/fotos/5.jpg",
-              "/fotos/6.jpg",
+              "/fotos/1.jpeg",
+              "/fotos/2.jpeg",
+              "/fotos/3.jpeg",
+              "/fotos/4.jpeg",
+              "/fotos/5.jpeg",
+              "/fotos/6.jpeg",
             ]}
             />
         </div>
