@@ -18,6 +18,7 @@ export const RsvpForm = () => {
 
   const dietaryRestrictionWhatsappUrl =
   "https://wa.me/5492612075791?text=Hola%2C%20tengo%20una%20restricci%C3%B3n%20alimentaria%20para%20informar.%20Mi%20nombre%20es%3A"
+  
 
   const {
     register,
@@ -57,14 +58,26 @@ export const RsvpForm = () => {
     }
   }
 
+  const paymentAlias = "eminicoboda"
+
+const handleCopyAliasAndOpenMp = async () => {
+  await navigator.clipboard.writeText(paymentAlias)
+
+  window.open(
+    "https://www.mercadopago.com.ar/",
+    "_blank",
+    "noopener,noreferrer"
+  )
+}
+
   if (submitted && guestSummary) {
   return (
-    <div className="space-y-5 text-center text-[#262e54]">
-      <h2 className="font-serif text-2xl uppercase tracking-[0.25em] text-[#c9a227]">
+    <div className="space-y-3 text-center text-[#262e54]">
+      <h2 className="font-serif text-xl uppercase tracking-[0.25em] text-[#c9a227]">
         ¡Gracias por acompañarnos!
       </h2>
 
-      <p className="text-sm leading-relaxed text-[#262e54]/70">
+      <p className="text-xs leading-relaxed text-[#262e54]/70">
         Tu presencia es lo más importante para nosotros
         y estamos muy felices de que formes parte de este momento.
       </p>
@@ -105,14 +118,30 @@ export const RsvpForm = () => {
         Mercado Pago.
       </p>
 
-      <a
-        href={weddingPaymentConfig.mercadoPagoUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block w-full rounded-full bg-gradient-to-r from-[#d4af37] to-[#f1d27a] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-[#262e54] shadow-md transition hover:scale-[1.02]"
-      >
-        Pagar con Mercado Pago
-      </a>
+     <div className="rounded-2xl border border-[#d4af37]/40 bg-[#fffaf2] p-5 text-center shadow-sm">
+  <p className="text-xs uppercase tracking-widest text-[#262e54]/50">
+    Alias para transferencia
+  </p>
+
+  <p className="mt-2 text-xl font-semibold tracking-wide text-[#262e54]">
+    {paymentAlias}
+  </p>
+
+  <button
+    type="button"
+    onClick={handleCopyAliasAndOpenMp}
+    className="mt-4 w-full rounded-full bg-gradient-to-r from-[#d4af37] to-[#f1d27a] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-[#262e54] shadow-md transition hover:scale-[1.02]"
+  >
+    Copiar alias y abrir Mercado Pago
+  </button>
+
+  <div className="mt-4 space-y-1 text-left text-xs leading-relaxed text-[#262e54]/60">
+    <p>1. Tocá el botón para copiar el alias.</p>
+    <p>2. Se abrirá Mercado Pago en una nueva pestaña.</p>
+    <p>3. Pegá el alias y realizá la transferencia.</p>
+  </div>
+</div>
+
     </div>
   )
 }
