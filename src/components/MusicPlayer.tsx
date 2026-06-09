@@ -60,7 +60,7 @@ export function MusicPlayer({
         type="button"
         onClick={togglePlay}
         aria-label={playing ? "Pausar música" : "Reproducir música"}
-        className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-background md:px-4 px-1 md:py-2 py-0.5 text-xs uppercase text-black/70 shadow-sm backdrop-blur hover:bg-white"
+        className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-background md:px-4 px-1.5 md:py-2 py-0.5 text-xs uppercase text-title shadow-sm backdrop-blur hover:bg-white"
       >
         <span className="md:text-base text-xs leading-none">
           {playing ? "⏸" : "▶️"}

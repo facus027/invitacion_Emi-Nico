@@ -23,7 +23,7 @@ export function PanoramicImageSlider({
   }, [images.length, interval])
 
   return (
-    <section className="w-full px-4 py-10">
+    <section className="w-full px-4 py-7">
       <div className="mx-auto max-w-md">
         <div className="overflow-hidden rounded-[2rem] border border-white/40 bg-white shadow-xl">
           <div
@@ -50,7 +50,7 @@ export function PanoramicImageSlider({
           </div>
         </div>
 
-        <p className="mt-5 text-center font-serif text-lg italic text-title">
+        <p className="mt-3 text-center font-serif text-lg italic text-title">
           Una historia, muchos momentos.
         </p>
       </div>

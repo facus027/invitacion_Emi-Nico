@@ -18,13 +18,11 @@ function App() {
 
   return (
     <>
-      <section className="mx-auto w-full md:max-w-md text-center bg-background">
+    <div className="fixed top-5 right-5 z-[9999] opacity-90 hover:opacity-100">
+  <MusicPlayer src="/audio/musica.mp3" />
+</div>
 
-        <div className="relative md:ml-32 ml-r1 mx-auto font-montserratMedium font-bold w-full max-w-[420px]">
-           <div className="absolute right-3 md:top-3 -top-7 z-10 opacity-80 hover:opacity-100 ">
-             <MusicPlayer src="/audio/musica.mp3" />
-           </div>
-          </div>
+      <section className="mx-auto w-full md:max-w-md text-center bg-background">
 
           <RevealOnScroll>
         <div className="flex">
