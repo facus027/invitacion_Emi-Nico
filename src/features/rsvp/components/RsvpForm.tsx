@@ -16,6 +16,9 @@ export const RsvpForm = () => {
   const [guestSummary, setGuestSummary] = useState<RsvpFormData | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
+  const dietaryRestrictionWhatsappUrl =
+  "https://wa.me/5492612075791?text=Hola%2C%20tengo%20una%20restricci%C3%B3n%20alimentaria%20para%20informar.%20Mi%20nombre%20es%3A"
+
   const {
     register,
     handleSubmit,
@@ -158,6 +161,21 @@ export const RsvpForm = () => {
 
   <p className="mt-1 text-xs text-[#262e54]/50">
     ${weddingPaymentConfig.cardPrice.toLocaleString()} por persona
+  </p>
+</div>
+
+<div className="rounded-2xl border border-[#d4af37]/25 bg-[#fffaf2]/70 px-4 py-3 text-center">
+  <p className="text-xs leading-relaxed text-[#262e54]/60">
+    Si tenés alguna restricción alimentaria, podés avisarnos{" "}<br/>
+    <a
+      href={dietaryRestrictionWhatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-semibold text-[#c9a227] underline underline-offset-4 transition hover:text-[#262e54]"
+    >
+      por WhatsApp
+    </a>
+    .
   </p>
 </div>
 
