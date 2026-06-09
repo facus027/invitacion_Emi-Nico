@@ -63,8 +63,6 @@ function App() {
               "/fotos/2.jpeg",
               "/fotos/3.jpeg",
               "/fotos/4.jpeg",
-              "/fotos/5.jpeg",
-              "/fotos/6.jpeg",
             ]}
             />
         </div>
